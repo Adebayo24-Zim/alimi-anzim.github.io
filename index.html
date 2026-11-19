@@ -88,20 +88,20 @@
 
         <section class="view" id="view-tasks">
           <div class="page-heading"><div><p class="eyebrow">À FAIRE</p><h1>Mes tâches</h1><p class="muted">Toutes vos activités réunies au même endroit.</p></div><button class="primary-button" data-add>＋ Ajouter une tâche</button></div>
-          <div class="toolbar task-toolbar"><input class="search-input" id="taskSearch" type="search" placeholder="⌕  Rechercher une activité..."><select id="statusFilter" class="select-input"><option value="all">Tous les statuts</option><option value="pending">À faire</option><option value="progress">En cours</option><option value="done">Terminées</option></select><select id="priorityFilter" class="select-input"><option value="all">Toutes les priorités</option><option>Urgent</option><option>Élevé</option><option>Moyen</option><option>Faible</option></select></div>
+          <div class="toolbar task-toolbar"><input class="search-input" id="taskSearch" type="search" placeholder="⌕  Rechercher une activité..."><select id="statusFilter" class="select-input"><option value="all">Tous les statuts</option><option value="pending">À faire</option><option value="done">Terminées</option></select><select id="priorityFilter" class="select-input"><option value="all">Toutes les priorités</option><option>Urgent</option><option>Élevé</option><option>Moyen</option><option>Faible</option></select></div>
           <div class="panel"><div id="tasksList" class="tasks-list"></div></div>
         </section>
 
         <section class="view" id="view-calendar">
           <div class="page-heading"><div><p class="eyebrow">VUE D'ENSEMBLE</p><h1>Calendrier</h1><p class="muted">Retrouvez vos activités selon leur date.</p></div><button class="primary-button" data-add>＋ Nouvelle activité</button></div>
-          <div class="toolbar calendar-toolbar"><div class="calendar-views"><button class="soft-button calendar-view active" data-calendar-view="month">Mois</button><button class="soft-button calendar-view" data-calendar-view="week">Semaine</button><button class="soft-button calendar-view" data-calendar-view="day">Jour</button></div><div class="calendar-nav"><button class="icon-button" id="prevMonth">‹</button><strong id="monthLabel"></strong><button class="icon-button" id="nextMonth">›</button></div><button class="soft-button" id="calendarToday">Ce mois-ci</button></div>
+          <div class="toolbar calendar-toolbar"><div class="calendar-nav"><button class="icon-button" id="prevMonth">‹</button><strong id="monthLabel"></strong><button class="icon-button" id="nextMonth">›</button></div><button class="soft-button" id="calendarToday">Ce mois-ci</button></div>
           <div class="panel calendar-panel"><div class="calendar-grid" id="calendarGrid"></div></div>
           <div class="calendar-legend"><span><i class="dot purple-dot"></i> Personnel</span><span><i class="dot blue-dot"></i> Travail</span><span><i class="dot orange-dot"></i> Études</span><span><i class="dot green-dot"></i> Santé</span></div>
         </section>
 
         <section class="view" id="view-stats">
           <div class="page-heading"><div><p class="eyebrow">VOTRE ÉVOLUTION</p><h1>Statistiques</h1><p class="muted">Mesurez vos efforts et célébrez vos progrès.</p></div></div>
-          <div class="toolbar"><strong>Plage d’analyse</strong><div class="calendar-views"><button class="soft-button stats-range active" data-range="7">7 jours</button><button class="soft-button stats-range" data-range="30">30 jours</button></div></div><div class="stats-grid stats-grid-large"><article class="metric-card"><span class="metric-label">Tâches au total</span><strong id="statsTotal">0</strong></article><article class="metric-card"><span class="metric-label">Tâches terminées</span><strong id="statsDone">0</strong></article><article class="metric-card"><span class="metric-label">Taux de réussite</span><strong id="statsRate">0%</strong></article><article class="metric-card"><span class="metric-label">Heures planifiées terminées</span><strong id="statsHours">0 h</strong></article></div>
+          <div class="stats-grid stats-grid-large"><article class="metric-card"><span class="metric-label">Tâches au total</span><strong id="statsTotal">0</strong></article><article class="metric-card"><span class="metric-label">Tâches terminées</span><strong id="statsDone">0</strong></article><article class="metric-card"><span class="metric-label">Taux de réussite</span><strong id="statsRate">0%</strong></article></div>
           <div class="panel chart-panel"><div class="panel-heading"><div><h3>Activités des 7 derniers jours</h3><p class="muted">Nombre de tâches terminées par jour</p></div></div><div id="weeklyChart" class="bar-chart"></div></div>
           <div class="panel insight-panel"><span class="metric-icon purple">✦</span><div><h3>Votre conseil productivité</h3><p id="statsAdvice" class="muted">Chaque tâche terminée est une victoire. Continuez !</p></div></div>
         </section>
@@ -113,7 +113,7 @@
 
         <section class="view" id="view-settings">
           <div class="page-heading"><div><p class="eyebrow">PERSONNALISATION</p><h1>Paramètres</h1><p class="muted">Adaptez DAYFLOW à votre façon de travailler.</p></div></div>
-          <div class="panel settings-panel"><div class="setting-row"><div><h3>Votre prénom</h3><p class="muted">Utilisé pour personnaliser votre accueil.</p></div><input id="nameSetting" class="text-input" maxlength="24" placeholder="Votre prénom"><button class="soft-button" id="saveName">Enregistrer</button></div><div class="setting-row"><div><h3>Apparence</h3><p class="muted">Choisissez votre ambiance préférée.</p></div><button class="soft-button" id="settingsTheme">Basculer clair / sombre</button></div><div class="setting-row"><div><h3>Notifications et rappels</h3><p class="muted">Autorisez les notifications pour recevoir les rappels lorsque DAYFLOW est ouvert.</p></div><button class="soft-button" id="enableNotifications">Activer les notifications</button></div><div class="setting-row"><div><h3>Vos données</h3><p class="muted">Vos activités sont enregistrées dans ce navigateur.</p></div><button class="danger-button" id="clearData">Effacer toutes les activités</button></div></div>
+          <div class="panel settings-panel"><div class="setting-row"><div><h3>Votre prénom</h3><p class="muted">Utilisé pour personnaliser votre accueil.</p></div><input id="nameSetting" class="text-input" maxlength="24" placeholder="Votre prénom"><button class="soft-button" id="saveName">Enregistrer</button></div><div class="setting-row"><div><h3>Apparence</h3><p class="muted">Choisissez votre ambiance préférée.</p></div><button class="soft-button" id="settingsTheme">Basculer clair / sombre</button></div><div class="setting-row"><div><h3>Vos données</h3><p class="muted">Vos activités sont enregistrées dans ce navigateur.</p></div><button class="danger-button" id="clearData">Effacer toutes les activités</button></div></div>
         </section>
       </div>
       <footer class="footer">DAYFLOW <span>·</span> Faites de votre temps votre meilleur allié.</footer>
@@ -129,7 +129,6 @@
         <label>Description <span class="optional">(facultatif)</span><textarea id="activityDescription" rows="2" placeholder="Quelques détails utiles..."></textarea></label>
         <div class="form-row"><label>Date<input id="activityDate" type="date" required></label><label>Catégorie<select id="activityCategory"><option>Personnel</option><option>Travail</option><option>Études</option><option>Santé</option><option>Autre</option></select></label></div>
         <div class="form-row"><label>Début<input id="activityStart" type="time" required value="09:00"></label><label>Fin<input id="activityEnd" type="time" required value="10:00"></label></div>
-        <label>Rappel<select id="activityReminder"><option value="0">Aucun rappel</option><option value="5">5 minutes avant</option><option value="10">10 minutes avant</option><option value="15" selected>15 minutes avant</option><option value="30">30 minutes avant</option><option value="60">1 heure avant</option></select></label>
         <label>Priorité<select id="activityPriority"><option>Faible</option><option selected>Moyen</option><option>Élevé</option><option>Urgent</option></select></label>
         <div class="modal-actions"><button type="button" class="soft-button" id="cancelModal">Annuler</button><button type="submit" class="primary-button">Enregistrer l'activité</button></div>
       </form>
@@ -137,5 +136,14 @@
   </div>
   <div class="toast" id="toast" role="status"></div>
   <script src="app.js"></script>
+
+  <nav class="mobile-bottom-nav" aria-label="Navigation mobile">
+    <button class="active" data-view="dashboard"><span>▦</span>Accueil</button>
+    <button data-view="day"><span>◷</span>Journée</button>
+    <button data-view="tasks"><span>☷</span>Tâches</button>
+    <button data-view="calendar"><span>▦</span>Agenda</button>
+    <button data-view="settings"><span>⚙</span>Réglages</button>
+  </nav>
+  <button class="mobile-fab" data-add aria-label="Ajouter une activité">＋</button>
 </body>
 </html>
